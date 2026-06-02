@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RC Car Budget Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <body>
+
+        <!-- ============================================
+             NAVIGATION BAR
+             ============================================ -->
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">RC <span>TRACKER</span></h1>
+                <div class="nav-links">
+                    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#rc-car"><i class="fa-solid fa-car"></i> RC Car</a>
+                    <a href="#upgrades"><i class="fa-solid fa-wrench"></i> Upgrades</a>
+                    <a href="#fund"><i class="fa-solid fa-coins"></i> Fund</a>
+                    <a href="#members"><i class="fa-solid fa-users"></i> Members</a>
+                    <a href="#leader"><i class="fa-solid fa-shield"></i> Leader</a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <!-- ============================================
+                 HOME PAGE
+                 ============================================ -->
+
+            <section id="home" class="page">
+
+                <!-- Hero Banner -->
+                <div class="hero">
+                    <h1>RC CAR TRACKER</h1>
+                    <div class="hero-line"></div>
+                    <p>Track our build, upgrades, and team fund</p>
+                </div>
+
+                <!-- Stat Cards -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <h2>₱0</h2>
+                        <p>Total Fund</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>₱3,500</h2>
+                        <p>Goal</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>0/16</h2>
+                        <p>Paid Today</p>
+                    </div>
+                </div>
+
+                <!-- Announcement Banner -->
+                <div class="announcement">
+                    <h3>📢 Announcement</h3>
+                    <p class="date">May 30 2026</p>
+                    <p id="message">We will be collecting our daily 5 pesos starting tomorrow</p>
+                </div>
+
+            </section>
+
+
+            <!-- ============================================
+                 RC CAR PAGE
+                 ============================================ -->
+
+            <section id="rc-car" class="page">
+
+                <!-- Car Name & Description -->
+                <h2>Our RC Car</h2>
+                <p id="rccarname">Aquazonic - Sumo and Racing RC Car</p>
+
+                <h3 class="title"><span>RC</span>SPECS</h3>
+                <div class="title-line"></div>
+                <!-- Spec Cards -->
+                <div class="specs">
+                    <div class="spec-card">
+                        <h3>Motor</h3>
+                        <p>3300KV Brushless</p>
+                    </div>
+                    <div class="spec-card">
+                        <h3>Battery</h3>
+                        <p>3S LiPo 5000mAh</p>
+                    </div>
+                    <div class="spec-card">
+                        <h3>Chassis</h3>
+                        <p>1/10 Touring</p>
+                    </div>
+                </div>
+
+                <h3 class="title"><span>RC</span>CURRENT</h3>
+                <div class="title-line"></div>
+                <div class="rccarpicture">
+                    <div class="rccarpicture-card">+ Add Picture</div>
+                </div>
+
+
+                <h3 class="title"><span>RC</span>DESCRIPTION</h3>
+                <div class="title-line"></div>
+                <div class="rccardescription">
+                    <div class="rccardescription-card">
+                        <p id="description">The Aquazonic Sumo is a high-performance 1/10 scale touring RC car built for speed and durability. 
+                            Powered by a 3300KV brushless motor and a 3S LiPo battery, it delivers insane acceleration on any smooth surface. Custom painted in red with drift tires, this beast is the result of our team's hard work and daily contributions. 
+                            Still upgrading — the best is yet to come. 🏎️</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ============================================
+                 UPGRADES PAGE
+                 ============================================ -->
+
+            <section id="upgrades" class="page">
+                <h2>Upgrades</h2>
+
+                <!-- Installed Upgrades -->
+                <div class="installed">
+                    <h3>Completed Upgrades</h3>
+                    <div class="installed-card">
+                        <span class="tag">INSTALLED</span>
+                        <h4>3300KV Brushless Motor</h4>
+                        <p>₱780</p>
+                    </div>
+                    <div class="installed-card">
+                        <span class="tag">INSTALLED</span>
+                        <h4>3S LiPo Battery</h4>
+                        <p>₱450</p>
+                    </div>
+                    <div class="installed-card">
+                        <span class="tag">INSTALLED</span>
+                        <h4>Custom Body Paint</h4>
+                        <p>₱200</p>
+                    </div>
+                </div>
+
+                <!-- Planned Upgrades -->
+                <div class="planned">
+                    <h3>Planned Upgrades</h3>
+                    <div class="planned-card">
+                        <span class="tag">PLANNED</span>
+                        <h4>Servo Motor</h4>
+                        <p>₱500</p>
+                    </div>
+                    <div class="planned-card">
+                        <span class="tag">PLANNED</span>
+                        <h4>LCD</h4>
+                        <p>₱1000</p>
+                    </div>
+                    <div class="planned-card">
+                        <span class="tag">PLANNED</span>
+                        <h4>TT Wheels</h4>
+                        <p>₱300</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ============================================
+                 FUND PAGE
+                 ============================================ -->
+
+            <section id="fund" class="page">
+                <h2>Team Fund</h2>
+
+                <div class="fund-summary">
+
+                    <!-- Progress Bar -->
+                    <div class="progress-wrap">
+                        <div class="progress-info">
+                            <span>₱40 raised</span>
+                            <span class="progress-percent">1%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 1%"></div>
+                        </div>
+                        <p class="progress-sub">₱3,460 remaining to reach ₱3,500 goal</p>
+                    </div>
+
+                    <!-- Fund Stat Cards -->
+                    <div class="stat">
+                        <div class="stat-card">
+                            <h3>₱40</h3>
+                            <p>Total Collected</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>₱5</h3>
+                            <p>Daily Per Member</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>₱300</h3>
+                            <p>Remaining Goal</p>
+                        </div>
+                    </div>
+
+                    <!-- Member Payments Table -->
+                    <div class="fund-table">
+                        <h3>Member Payments</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Days Paid</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Kent</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jean</td>
+                                    <td>2</td>
+                                    <td>₱10</td>
+                                    <td><span class="badge unpaid">Unpaid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Love Ly</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Airashane</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Alexa</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Chris Oyven</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge unpaid">Unpaid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Chrisjhon</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Hanz Jayme</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jaenerose</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>JennyBabe</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>April Rose</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge unpaid">Unpaid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Marc France</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge unpaid">Unpaid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Maria</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Pauleen</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Rhena</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge paid">Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Gian</td>
+                                    <td>3</td>
+                                    <td>₱15</td>
+                                    <td><span class="badge unpaid">Unpaid</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ============================================
+                 MEMBERS PAGE
+                 ============================================ -->
+
+            <section id="members" class="page">
+                <h2>Members</h2>
+
+                <!-- Members Grid -->
+                <div class="members-grid">
+                    <div class="member-card">
+                        <h3>Jean Lazaga</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Love Ly Tiwanag</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Airashane Divinagracia</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Alexa Therese Prahinog</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Chris Oyven Ledres Senoron</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Chrisjhon Heyrosa</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Gian Steve Calago</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Hanz Jayme</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Jaenerose Samaio</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>JennyBabe Catanaman</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>April Rose</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Marc France Rondez</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Maria Cabardo</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Pauleen Fuentes</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>Rhena Dela Cruz</h3>
+                        <p>Member</p>
+                        <p>₱10</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>John Kent Pantinuple</h3>
+                        <p>Leader</p>
+                        <p>₱10</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ============================================
+                 LEADER / ADMIN PAGE
+                 ============================================ -->
+
+            <section id="leader" class="page">
+                <h2>Leader Panel</h2>
+
+                <!-- Password Screen -->
+                <div id="password-screen">
+                    <div class="password-card">
+                        <i class="fa-solid fa-shield"></i>
+                        <h3>Leader Access Only</h3>
+                        <p>Enter the password to continue</p>
+                        <input type="password" id="password-input" placeholder="Enter password...">
+                        <button id="password-btn">Enter</button>
+                        <div id="password-msg"></div>
+                    </div>
+                </div>
+
+                <!-- Leader Content (hidden until password is correct) -->
+                <div id="leader-content" style="display: none">
+                    <div class="leader-panel">
+
+                        <!-- Card 1: Announcement -->
+                        <div class="leader-panel-card">
+                            <h2><i class="fa-solid fa-bullhorn"></i> Post Announcement</h2>
+                            <h3>Announcement</h3>
+                            <div class="leader-controls">
+                                <input type="text" id="announcement-input" placeholder="Write an announcement...">
+                                <button id="announcement-btn">Post</button>
+                            </div>
+                            <div id="announcement-msg"></div>
+                        </div>
+
+                        <!-- Card 2: RC Car Management -->
+                        <div class="leader-panel-card">
+                            <h2><i class="fa-solid fa-car"></i> RC Car Management</h2>
+                            <h3>Update RC Car Name</h3>
+                            <div class="leader-controls">
+                                <input type="text" id="rccarname-input" placeholder="Write a RC car name...">
+                                <button id="rccarname-btn">Update Name</button>
+                            </div>
+                            <div id="rccarname-msg"></div>
+                            <h3>RC Car Description</h3>
+                            <div class="leader-controls">
+                                <input type="text" id="rc-description-input" placeholder="Write a description...">
+                                <button id="description-btn">Add Description</button>
+                            </div>
+                            <div id="description-msg"></div>
+                        </div>
+
+                        <!-- Card 3: Upgrades Management -->
+                        <div class="leader-panel-card">
+                            <h2><i class="fa-solid fa-wrench"></i> Upgrades Management</h2>
+                            <h3>Add Upgrades</h3>
+                            <div class="leader-controls">
+                                <input type="text" id="upgrade-input" placeholder="Enter component...">
+                                <input type="text" id="upgradecost-input" placeholder="Cost...">
+                                <button id="upgrade-btn">Add Upgrade</button>
+                            </div>
+                            <div id="upgrade-msg"></div>
+
+                            <h3>Mark Upgrades as Installed</h3>
+                            <div class="leader-controls">
+                                <select id="component-select">
+                                    <option value="">Select a component...</option>
+                                    <option value="Servo Motor">Servo Motor</option>
+                                    <option value="LCD">LCD</option>
+                                    <option value="TT Wheels">TT Wheels</option>
+                                </select>
+                                <button id="mark-installed-btn">Mark as Installed</button>
+                            </div>
+                            <div id="installed-msg"></div>
+                        </div>
+
+                        <!-- Card 4: Fund Management -->
+                        <div class="leader-panel-card">
+                            <h2><i class="fa-solid fa-coins"></i> Fund Management</h2>
+                            <h3>Mark Member as Paid</h3>
+                            <div class="leader-controls">
+                                <select id="member-select">
+                                    <option value="">Select a member...</option>
+                                    <option value="John Kent Pantinuple">John Kent Pantinuple</option>
+                                    <option value="Jean Lazaga">Jean Lazaga</option>
+                                    <option value="Love Ly Tiwanag">Love Ly Tiwanag</option>
+                                    <option value="Airashane Divinagracia">Airashane Divinagracia</option>
+                                    <option value="Alexa Therese Prahinog">Alexa Therese Prahinog</option>
+                                    <option value="Chris Oyven Senoron">Chris Oyven Senoron</option>
+                                    <option value="Chrisjohn Heyrosa">Chrisjohn Heyrosa</option>
+                                    <option value="Gian Steve Calago">Gian Steve Calago</option>
+                                    <option value="Hanz Jayme">Hanz Jayme</option>
+                                    <option value="Jaenerose Samaio">Jaenerose Samaio</option>
+                                    <option value="JennyBabe Catanaman">JennyBabe Catanaman</option>
+                                    <option value="April Rose">April Rose</option>
+                                    <option value="Marc France Rondez">Marc France Rondez</option>
+                                    <option value="Maria Cabardo">Maria Cabardo</option>
+                                    <option value="Pauleen Fuentes">Pauleen Fuentes</option>
+                                    <option value="Rhena Dela Cruz">Rhena Dela Cruz</option>
+                                </select>
+                                <button id="mark-paid-btn">Mark as Paid</button>
+                            </div>
+                            <div id="leader-msg"></div>
+                        </div>
+
+                        <!-- Card 5: Members Management -->
+                        <div class="leader-panel-card">
+                            <h2><i class="fa-solid fa-users"></i> Members Management</h2>
+                            <h3>Add a Member</h3>
+                            <div class="leader-controls">
+                                <input type="text" id="addmember-input" placeholder="Enter Full Name...">
+                                <select id="position-select">
+                                    <option value="">Position...</option>
+                                    <option value="Leader">Leader</option>
+                                    <option value="Assistant Leader">Assistant Leader</option>
+                                    <option value="Member">Member</option>
+                                </select>
+                                <button id="addmember-btn">Add Member</button>
+                            </div>
+                            <div id="addmember-msg"></div>
+                        </div>
+
+                        <!-- Card 6: Activity Log -->
+                        <div class="leader-panel-card">
+                            <h2><i class="fa-solid fa-clock-rotate-left"></i> Activity Log</h2>
+                            <h3>Payment History</h3>
+                            <div id="payment-log"></div>
+                            <h3>Upgrades History</h3>
+                            <div id="upgrades-log"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

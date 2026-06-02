@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+
+/* ============================================
+   RESET & ROOT VARIABLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-main: #0a0a0f;
+    --bg-card: #13131a;
+    --bg-surface: #1c1c26;
+    --accent: #f5a623;
+    --text-main: #f0f0f0;
+    --text-muted: #888899;
+    --border: #2a2a3a;
+}
+
+/* ============================================
+   BODY
+   ============================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+
+.navbar {
+    background-color: var(--bg-card);
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    margin-right: auto;
+    color: var(--accent);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: var(--text-main);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin-left: 10px;
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid var(--text-muted);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links i {
+    margin-right: 4px;
+}
+
+.nav-links a:hover {
+    color: var(--text-main);
+    border-color: var(--accent);
+    transform: scale(1.07) translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a.active {
+    background-color: var(--accent);
+    color: #111;
+    border-color: var(--accent);
+}
+
+/* ============================================
+   MAIN LAYOUT & PAGE SECTIONS
+   ============================================ */
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.page {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#rc-car h2, #upgrades h2, #fund h2, #members h2, #leader h2 {
+    color: var(--text-main);
+    font-size: 18px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+#rc-car p, #fund p {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+/* ============================================
+   HOME PAGE — HERO
+   ============================================ */
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: var(--accent);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-line {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    margin: 12px auto;
+}
+
+/* ============================================
+   HOME PAGE — STAT CARDS
+   ============================================ */
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.stat-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    flex: 1;
+}
+
+.stat-card h2 {
+    color: var(--accent);
+    font-size: 22px;
+}
+
+.stat-card p {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* ============================================
+   HOME PAGE — ANNOUNCEMENT
+   ============================================ */
+
+.announcement {
+    background-color: var(--bg-surface);
+    margin-top: 20px;
+    padding: 8px 17px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.announcement h3 {
+    color: #af4f06;
+    margin-bottom: 5px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.date {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+#message {
+    color: rgba(255, 81, 0, 0.557);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================
+   RC CAR PAGE — SPEC CARDS & RC DESCRIPTION
+   ============================================ */
+
+.specs {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.spec-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 50px;
+    flex: 1;
+}
+
+.spec-card h3 {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.spec-card p {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+
+.page .title {
+    font-size: 13px;
+    font-family: ORBITRON;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.page .title-line {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.page span {
+    color: var(--accent);
+}
+
+.rccarpicture-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 16px;
+}
+
+.rccardescription-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+        margin-top: 16px;
+}
+
+.rccardescription-card p {
+    letter-spacing: 1px;
+}
+/* ============================================
+   UPGRADES PAGE — INSTALLED & PLANNED CARDS
+   ============================================ */
+
+.installed, .planned {
+    margin-bottom: 20px;
+}
+
+.installed h3, .planned h3 {
+    color: var(--text-muted);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.installed-card, .planned-card {
+    background-color: var(--bg-surface);
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.installed-card h4, .planned-card h4 {
+    color: var(--text-main);
+    font-size: 14px;
+    flex: 1;
+}
+
+.installed-card p, .planned-card p {
+    color: var(--accent);
+    font-size: 13px;
+}
+
+.tag {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 183, 66, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(245, 166, 35, 0.3);
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   FUND PAGE — PROGRESS BAR
+   ============================================ */
+
+.progress-wrap {
+    margin-bottom: 18px;
+    margin-top: 18px;
+    padding: 16px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.progress-percent {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #e8385a, var(--accent));
+    border-radius: 20px;
+}
+
+.progress-sub {
+    font-size: 12px;
+    color: var(--text-main);
+    margin-top: 8px;
+}
+
+/* ============================================
+   FUND PAGE — STAT CARDS & TABLE
+   ============================================ */
+
+.fund-summary .stat {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.fund-table h3 {
+    color: var(--text-muted);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+}
+
+tbody td {
+    padding: 10px 12px;
+    font-size: 13px;
+    color: var(--text-main);
+    border-bottom: 1px solid var(--border);
+}
+
+tbody tr:hover td {
+    background-color: var(--bg-surface);
+}
+
+.badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.badge.paid {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.badge.unpaid {
+    background-color: rgba(232, 56, 90, 0.12);
+    color: #e8385e;
+    border: 1px solid rgba(232, 56, 90, 0.25);
+}
+
+/* ============================================
+   MEMBERS PAGE — MEMBER CARDS GRID
+   ============================================ */
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.member-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.member-card h3 {
+    color: var(--text-main);
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.member-card p {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.member-card p:last-child {
+    color: var(--accent);
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* ============================================
+   LEADER PAGE — PASSWORD SCREEN
+   ============================================ */
+
+.password-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.password-card i {
+    font-size: 40px;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.password-card h3 {
+    color: var(--text-main);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.password-card p {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 20px;
+}
+
+.password-card input {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#password-msg {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* ============================================
+   LEADER PAGE — PANEL CARDS
+   ============================================ */
+
+.leader-panel-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.leader-panel-card h2 {
+    color: var(--text-main);
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+}
+
+.leader-panel-card h2 i {
+    color: var(--text-muted);
+    margin-right: 6px;
+}
+
+.leader-panel-card h3 {
+    color: var(--text-muted);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.leader-panel-card h3::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+/* ============================================
+   LEADER PAGE — CONTROLS (INPUTS & BUTTONS)
+   ============================================ */
+
+.leader-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.leader-controls input,
+.leader-controls select {
+    flex: 1;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.leader-controls button {
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 150px;
+}
+
+button {
+    background-color: var(--accent);
+    color: #111;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#upgradecost-input {
+    max-width: 80px;
+}
+
+#position-select {
+    max-width: 80px;
+}
+
+/* ============================================
+   LEADER PAGE — MESSAGE FEEDBACK
+   ============================================ */
+   
+#addmember-msg,
+#rccarname-msg,
+#leader-msg,
+#installed-msg,
+#announcement-msg,
+#description-msg,
+#upgrade-msg,
+#add-member-msg {
+    margin-top: 10px;
+    font-size: 13px;
+    min-height: 16px;
+}
