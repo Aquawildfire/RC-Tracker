@@ -8,7 +8,7 @@ A dark-themed web app built for our school RC car build team to track our daily 
 - 💰 Track daily member contributions with auto-updating progress bar and totals
 - 👥 Add/remove team members, synced across the member list, fund table, and dropdowns
 - 📜 Activity log for payments and upgrade history
-- 🔐 Simple password-gated Leader Panel
+- 🔐 Simple password-gated Leader Panel (to access the is password 1)
 - 💾 All data survives page refresh via localStorage
 
 ## Built with
