@@ -18,4 +18,4 @@ HTML, CSS, and vanilla JavaScript — no frameworks, no build tools.
 This was my first full web project. Along the way I learned how to work with the DOM directly, debug real state-sync bugs (like keeping multiple dropdowns and displays in sync with one source of data), and persist data with `localStorage` + `JSON.stringify`/`JSON.parse`.
 
 ## Live Demo
-https://github.com/Aquawildfire/RC-Tracker.git
+https://aquawildfire.github.io/RC-Tracker/
